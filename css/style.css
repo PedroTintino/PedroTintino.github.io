@@ -189,6 +189,9 @@ a{
     grid-column-end: 4;
 } */
 
+
+/* Isso aqui deu uma quebrada danada na minha cabeça */
+
 @media (max-width:690px){
     .grid{
         grid-template-columns: 1fr;
@@ -204,5 +207,9 @@ a{
 @media (min-width: 990px){
     .grid{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .grid-content:nth-child(14){
+        grid-column-start: 2;
+        grid-column-end: 4;
     }
 }
